@@ -1,0 +1,279 @@
+// Брейкпонты
+$xl: 1200;
+$lg: 992;
+$md: 768;
+$sm: 576;
+
+/*Переменные*/
+$section-color: #fbfbfb;
+
+
+/*Section - Promo*/
+.promo {
+    background: linear-gradient(45deg, #ff8f5a, #ff2f96);
+    overflow: hidden;
+  }
+  
+  .promo__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .promo__text {
+    padding: 80px 100px;
+  }
+  
+    .promo__text p {
+      font-size: 18px;
+      color: white;
+      margin-top: 50px;
+    }
+  
+  .promo__elements{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+    #element6{
+      position: absolute;
+      top: -100px;
+      right: -750px;
+  
+      animation: show6 3s;
+    }
+  
+      @keyframes show6{
+        from{
+          top: 0;
+          right: 0;
+          opacity: 0;
+        }
+        to{
+          top: -100px;
+          right: -750px;
+          opacity: 1;
+        }
+      }
+  
+    #element7{
+      position: absolute;
+      top: 120px;
+      left: 500px;
+  
+      animation: show7 3s;
+    }
+  
+      @keyframes show7{
+        from{
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+        to{
+          top: 120px;
+          left: 500px;
+          opacity: 1;
+        }
+      }
+  
+      #element8{
+        position: absolute;
+        top: 100px;
+        left: -700px;
+    
+        animation: show8 3s;
+      }
+    
+        @keyframes show8{
+          from{
+            top: 0;
+            left: 0;
+            opacity: 0;
+          }
+          to{
+            top: 100px;
+            left: -700px;
+            opacity: 1;
+          }
+        }
+  
+        #element9{
+          position: absolute;
+          top: -130px;
+          left: -800px;
+          transform: rotate(45deg);
+      
+          animation: show9 3s;
+        }
+      
+          @keyframes show9{
+            from{
+              top: 0;
+              left: 0;
+              opacity: 0;
+            }
+            to{
+              top: -130px;
+              left: -800px;
+              opacity: 1;
+            }
+          }
+  
+          #element10{
+            position: absolute;
+            top: 90px;
+            left: 750px;
+        
+            animation: show10 3s;
+          }
+        
+            @keyframes show10{
+              from{
+                top: 0;
+                left: 0;
+                opacity: 0;
+              }
+              to{
+                top: 90px;
+                left: 750px;
+                opacity: 1;
+              }
+            }
+
+@media screen and (max-width: 1400px){
+    .promo__elements img {
+        transform: scale(0.8);
+    }
+
+    #element6{
+        position: absolute;
+        top: -100px;
+        right: -550px;
+    
+        animation: show6 3s;
+      }
+    
+        @keyframes show6{
+          from{
+            top: 0;
+            right: 0;
+            opacity: 0;
+          }
+          to{
+            top: -100px;
+            right: -550px;
+            opacity: 1;
+          }
+        }
+    
+      #element7{
+        position: absolute;
+        top: 120px;
+        left: 400px;
+    
+        animation: show7 3s;
+      }
+    
+        @keyframes show7{
+          from{
+            top: 0;
+            left: 0;
+            opacity: 0;
+          }
+          to{
+            top: 120px;
+            left: 400px;
+            opacity: 1;
+          }
+        }
+    
+        #element8{
+          position: absolute;
+          top: 100px;
+          left: -550px;
+      
+          animation: show8 3s;
+        }
+      
+          @keyframes show8{
+            from{
+              top: 0;
+              left: 0;
+              opacity: 0;
+            }
+            to{
+              top: 100px;
+              left: -550px;
+              opacity: 1;
+            }
+          }
+    
+          #element9{
+            position: absolute;
+            top: -130px;
+            left: -590px;
+            transform: rotate(45deg);
+        
+            animation: show9 3s;
+          }
+        
+            @keyframes show9{
+              from{
+                top: 0;
+                left: 0;
+                opacity: 0;
+              }
+              to{
+                top: -130px;
+                left: -590px;
+                opacity: 1;
+              }
+            }
+    
+            #element10{
+              position: absolute;
+              top: 90px;
+              left: 570px;
+          
+              animation: show10 3s;
+            }
+          
+              @keyframes show10{
+                from{
+                  top: 0;
+                  left: 0;
+                  opacity: 0;
+                }
+                to{
+                  top: 90px;
+                  left: 570px;
+                  opacity: 1;
+                }
+              }
+}            
+
+@media screen and (max-width: $xl + "px") {
+    .promo__text {
+        padding: 80px 0px;
+    }
+
+    .promo__elements{
+        display: none;
+    }
+}
+@media screen and (max-width: $lg + "px") {}
+@media screen and (max-width: $md + "px") {
+    .promo__text p {
+        font-size: 14px;
+        margin-top: 40px;
+      }
+  
+}
+@media screen and (max-width: $sm + "px") {
+    .promo__text p {
+        font-size: 15px;
+        line-height: 2;
+      }
+}
