@@ -50,6 +50,8 @@ $(function(){
 
 
 	$('.header__menu a').on('click', function() { // плавная прокрутка
+		$('.header__burger, .header__menu').removeClass('active');
+		$('body').removeClass('block');
 
 		let href = $(this).attr('href');
 	
@@ -81,27 +83,5 @@ testWebP(function (support) {
     document.querySelector('body').classList.add('no-webp');
     }
 });
-		
-
-
-	/*$('#callme').click(function(){
-		//$('.popup-container').show();
-		$('.popup-container').fadeIn(400);
-		$('.popup').animate({
-			width:'700px',
-			height: '500px',
-		}, 400);
-	});
-
-	$('.popup-container').click(function(event){
-		if(event.target == this){
-			//$(this).hide();
-			$(this).fadeOut(400);
-			$('.popup').animate({
-				width:'0',
-				height: '0',
-			}, 400);
-		}	
-	});*/
 
 });
